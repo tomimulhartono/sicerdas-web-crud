@@ -1,0 +1,219 @@
+<style>
+    #background {
+        background-image: url(sekolah.png);
+        width: 100%;
+        margin: 0px;
+    }
+
+    .navbar{
+        background-color: #0f3a5b;
+        font-size: 20px;
+        height: 60px;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    }
+    .navbar a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        margin: 20px 10px 10px 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .photo {
+        float: right;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 5PX;
+    }
+
+    .user {
+        float: right;
+        font-size: 20px;
+        color: white;
+        margin-right: 10px;
+    }
+
+    .layout {
+        background-color: #005EA7;
+        overflow: hidden;
+        height: 500px;
+        border-radius: 50px;
+        margin: 30px 50px 0px 50px;
+        opacity: 0.8; <!-- Referensi Transparency : https://www.w3bai.com/id/css/css_image_transparency.html -->
+    }
+
+    #visi {
+        text-align: center;
+        color:white;
+        float: left;
+        width: 50%;
+        border-right: 1px solid white;
+        margin-top: 50px;
+    }
+
+    #misi {
+        text-align: center;
+        color: white;
+        float: right;
+        width: 40%;
+        margin: 50px 50px;
+    }
+
+    hr {
+        margin-top: 320px;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+    }
+
+    .kontak {
+        color: white;
+        text-align: center;
+    }
+
+    .kontak img {
+        width: 50px;
+        margin: 10px 10px 10px 50px;
+    }
+    .dropdown {
+      float: right;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 20px;  
+      border: none;
+      outline: none;
+      color: white;
+      font-family: inherit;
+      background-color: inherit;
+      font-weight: bold;
+      margin: 20px 10px 10px 10px;
+    }
+    .dropdown-content {
+      margin-top: 5px;
+      display: none;
+      position: absolute;
+      background-color: #005EA7;
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+      text-align: left;
+
+    }
+
+    .dropdown-content a {
+      color: white;
+      text-decoration: none;
+      text-align: left;
+      width: 150px;
+      margin: 0px 0px 0px 0px;
+      padding: 5px 3px 5px 17px;
+      border: 1px solid white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #0f3a5b;
+    }
+    .show {
+  display: block;
+}
+    i{
+        margin-left: 80px;
+        margin-top: 50px; 
+    }
+    .fa-caret-down{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+</style>
+
+<html>
+    <head>
+        <link href="../fontawesome/css/all.css" rel="stylesheet">
+        <title>SiCerdas | Profil Sekolah</title>
+    </head>
+
+    <body id="background">
+
+        <nav class="navbar">
+            <img src="logo.png" class="logo">
+            <div class="dropdown"> <!--referensi dropdown : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar_click -->
+                <button class="dropbtn" onclick="myFunction()">RANGGA S T <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="../Profil/Profil.html">Profile</a><br>
+                    <a href="../Jadwal/Jadwal.html">Jadwal</a><br>
+                    <a href="../Daftar_Nilai/nilai.html">Nilai</a>
+                    <a href="">Logout</a>
+                </div>
+            </div> 
+            <a class="a1" href="../Fasilitas/fasilitas.html"><b>FASILITAS</b></a>
+            <a class="a1" href="../Program_Studi/program_studi.html"><b>PROGRAM STUDI</b></a>
+            <a class="a1" href="../Profil_Sekolah/profil_sekolah.html" style="border-bottom: 5px solid #D29D29;"><b>PROFIL SEKOLAH</b></a>
+            <a class="a1" href="../Home/HomeScreen.html"><b>BERANDA</b></a>
+
+        </nav>
+ 
+            <br>
+
+    <div class="layout">
+
+        <div id="visi">
+            <b>
+                <u>VISI</u> <br> <br>
+                Sebagai pusat pendidikan dan pelatihan yang menghasilkan <br>
+                tenaga kerja terampil dan handal yang mampu menselaraskan <br>
+                antara kemajuan IPTEK dan IMTAQ serta sanggup <br>
+                bersaing di era global.
+            </b>
+            <br><br><br><br><br><br><br><br>
+        </div>
+
+        <div id="misi">
+            <b>
+                <u>MISI</u> <br> <br>
+                <ol>
+                    <li>Menanamkan keimanan dan ketaqwaan Kepada Tuhan <br> Yang Maha Esa.</li>
+                    <li>Menyelenggarakan pendidikan yang efektif, <br> efisien dan berkualitas.</li>
+                    <li>Membekali peserta didik dengan kemampuan untuk dapat <br> mengembangkan diri.</li>
+                </ol>
+            </b>
+        </div>
+    
+        <hr>
+
+        <p> Hubungi Kami </p>
+
+        <div class="kontak">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i> @smk_cerdas
+            <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> 0812345678910
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i> @smk_cerdas
+            <i class="fab fa-facebook fa-2x" aria-hidden="true"></i> SMK Cerdas Bandung
+        </div>
+
+    </div>
+
+    </body>
+</html>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>

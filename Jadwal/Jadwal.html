@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <link href="../fontawesome/css/all.css" rel="stylesheet">
+        <title>SiCerdas SMK Cerdas</title>
+        <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+            </script>
+        <style> 
+                .navbar{
+                  background-color: #0f3a5b;
+                  font-size: 20px;
+                  height: 60px;
+                  top: 0;
+                  right: 0;
+                  left: 0;
+                  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+                }
+                .navbar a{
+                  float: right;
+                  color: white;
+                  text-decoration: none;
+                  margin: 20px 20px 10px 10px;
+                }
+                .logo{
+                  float: left;
+                  width: 80px;
+                }
+                .img_profil{
+                  float: right;
+                  width: 50px;
+                  border-radius: 50%;
+                  margin-top: 5PX;
+                }
+                .dropdown {
+                float: right;
+                overflow: hidden;
+              }
+              
+              .dropdown {
+                cursor: pointer;
+                font-size: 20px;  
+                border: none;
+                outline: none;
+                color: white;
+                font-family: inherit;
+                background-color: inherit;
+                font-weight: bold;
+                margin: 20px 10px 10px 10px;
+              }
+              .dropbtn {
+                cursor: pointer;
+                font-size: 20px;  
+                border: none;
+                outline: none;
+                color: white;
+                font-family: inherit;
+                background-color: inherit;
+                font-weight: bold;
+                margin-left: 50px;
+              }
+              .dropdown-content {
+                margin-top: 5px;
+                display: none;
+                position: absolute;
+                background-color: #005EA7;
+                box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+                text-align: left;
+              
+              }
+              
+              .dropdown-content a {
+                color: white;
+                text-decoration: none;
+                text-align: left;
+                width: 150px;
+                margin: 0px 0px 0px 0px;
+                padding: 5px 3px 5px 17px;
+                border: 1px solid white;
+              }
+              
+              .dropdown-content a:hover {
+                background-color: #0f3a5b;
+              }
+              
+              .show {
+                display: block;
+              }
+              .form_edit{
+                      background-color: #005EA7;
+                      overflow: hidden;
+                      height: 400px;
+                      border-radius: 50px;
+                      margin: 100px 50px 0px 50px;
+                      opacity: 0.8;
+                  }   
+              .background{
+                  background-size: 100%;
+              }
+        nav .a1{
+            margin: 20px 10px 10px 10px;
+            float: right;
+            color: white;
+            text-decoration: none;
+        }
+        .a{
+            float: left;
+            margin-left: 40px;
+        }
+        .MatPel{
+            
+            background-color: #F4B084;
+        }
+        .hari{
+            background-color: #FFD966;
+        }
+        </style>
+    </head>
+    <body class="background" background="transparan.png" style="margin:0px">
+            <nav class="navbar">
+                    <img src="logo.png" class="logo">
+                    <div class="dropdown"> <!--referensi dropdown : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar_click -->
+                      <button class="dropbtn" onclick="myFunction()">RANGGA S T <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                      <div class="dropdown-content" id="myDropdown">
+                      <a href="../Profil/Profil.html">Profile</a><br>
+                      <a href="../Jadwal/Jadwal.html">Jadwal</a><br>
+                      <a href="../Daftar_Nilai/nilai.html">Nilai</a>
+                      <a href="">Logout</a>
+                    </div>
+                  </div> 
+                    <a href="../Fasilitas/fasilitas.html"><b>FASILITAS</b></a>
+                    <a href="../Program_Studi/program_studi.php"><b>PROGRAM STUDI</b></a>
+                    <a href="../Profil_Sekolah/profil_sekolah.html"><b>PROFIL SEKOLAH</b></a>
+                    <a href="../Home/HomeScreen.html"><b>BERANDA</b></a>
+                </nav>
+    <div align=center style="margin: 216px 25% 10px 25%; border: none;">
+       <table border="1" cellspasing="0" cellpadding="5" style="width: 100%; text-align: center;">
+           <tr style="background-color: #BF8F00;">
+               <td rowspan="2">Hari</td>
+               <td colspan="6">Waktu</td>
+           </tr>
+           <tr style="background-color: #FFD966;">
+               <td>06.30-07.30</td>
+               <td>07.30-08.30</td>
+               <td>08.30-09.30</td>
+               <td>09.30-10.30</td>
+               <td>10.30-11.30</td>
+               <td>11.30-12.30</td>
+           </tr>
+           <tr>
+                <td class="hari">Senin</td>
+                <td></td>
+                <td class="MatPel" colspan="2">Fisika</td>
+                <td></td>
+                <td></td>
+                <td></td>
+           </tr>
+           <tr>
+                <td class="hari">Selasa</td>
+                <td></td>
+                <td class="MatPel" colspan="2">Geografi</td>
+                <td></td>
+                <td class="MatPel" colspan="2">Sejarah</td>
+           </tr>
+           <tr>
+                <td class="hari">Rabu</td>
+                <td class="MatPel" colspan="3">IPA</td>
+                <td class="MatPel">Penjaskes</td>
+                <td></td>
+                <td></td>
+                
+           </tr>
+           <tr>
+                <td class="hari">Kamis</td>
+                <td class="MatPel" colspan="2">TIK</td>
+                <td></td>
+                <td class="MatPel" colspan="2">Bahasa Indonesia</td>
+                <td></td>
+           </tr>
+           <tr>
+                <td class="hari">Jum'at</td>
+                <td></td>
+                <td class="MatPel" colspan="2">Matematika</td>
+                <td></td>
+                <td class="MatPel">Bahasa Inggris</td>
+                <td></td>
+           </tr>
+           <tr>
+                <td class="hari">Sabtu</td>
+                <td></td>
+                <td></td>
+                <td class="MatPel" colspan="2">Sejarah</td>
+                <td></td>
+                <td></td>
+           </tr>
+       </table>
+    </div>
+    </body> 
+</html>
